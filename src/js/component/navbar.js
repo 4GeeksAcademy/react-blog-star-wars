@@ -22,7 +22,7 @@ export const Navbar = () => {
             <Link to="/">
                 <span className="navbar-brand mb-0 h1 ms-5">
                     <img 
-                        src="https://cdn.worldvectorlogo.com/logos/star-wars-2.svg" 
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Star_Wars_Logo..png" 
                         className="card-img-top" 
                         style={{ maxWidth: "10rem", maxHeight: "10rem" }} 
                         alt="Star Wars logo" 

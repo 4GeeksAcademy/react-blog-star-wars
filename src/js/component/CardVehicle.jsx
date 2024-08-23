@@ -1,22 +1,22 @@
 import React, { useContext } from "react";
-import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 
-export const CardCharacter = ({ img, title, characterId }) => { 
-    const { store: { characters }, actions: { addFavorite } } = useContext(Context);
+export const CardVehicle = ({ img2, title2, vehicleId }) => {
+    const { store: { vehicles }, actions: { addFavorite } } = useContext(Context);
 
     const handleAddFavorite = () => {
-        const character = characters.find(c => c.uid === characterId);
-        if (character) addFavorite(character, 'character');
+        const vehicle = vehicles.find(v => v.uid === vehicleId);
+        if (vehicle) addFavorite(vehicle, 'vehicle');
     };
 
     return (
         <div className="card bg-secondary bg-dark text-light" style={{ minWidth: "250px" }}>
-            <img src={img} className="card-img-top" alt={`${title} thumbnail`} />
+            <img src={img2} className="card-img-top" alt={`${title2} thumbnail`} />
             <div className="card-body">
-                <h5 className="card-title">{title}</h5>
+                <h5 className="card-title">{title2}</h5>
                 <div className="d-flex justify-content-between align-items-center">
-                    <Link to={`/SCharacter/${characterId}`} className="btn btn-warning">Details</Link>
+                    <Link to={`/SVehicle/${vehicleId}`} className="btn btn-warning">Details</Link>
                     <button 
                         type="button" 
                         className="btn btn-outline-warning bg-success" 

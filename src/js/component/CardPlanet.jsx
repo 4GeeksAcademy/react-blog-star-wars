@@ -11,7 +11,7 @@ export const CardPlanet = ({ img2, title2, planetId }) => {
     };
 
     return (
-        <div className="card bg-secondary bg-dark text-light" style={{ minWidth: "200px" }}>
+        <div className="card bg-secondary bg-dark text-light" style={{ minWidth: "250px" }}>
             <img src={img2} className="card-img-top" alt={`${title2} thumbnail`} />
             <div className="card-body">
                 <h5 className="card-title">{title2}</h5>

@@ -4,6 +4,7 @@ import ScrollToTop from "./component/scrollToTop";
 import { Blog } from "./views/Blog.jsx";
 import { Character } from "./views/Character.jsx";
 import { Planet } from "./views/Planet.jsx";
+import { Vehicle } from "./views/Vehicle.jsx"; // Importa el nuevo componente Vehicle
 
 import injectContext from "./store/appContext";
 import { Navbar } from "./component/navbar";
@@ -20,10 +21,10 @@ const Layout = () => {
 				<ScrollToTop>
 					<Navbar />
 					<Routes>
-						<Route path="/" element={<Blog />}/>
+						<Route path="/" element={<Blog />} />
 						<Route path="/SCharacter/:id" element={<Character />} />
 						<Route path="/SPlanet/:id" element={<Planet />} />
-						
+						<Route path="/SVehicle/:id" element={<Vehicle />} /> 
 						<Route path="*" element={<h1>Not found!</h1>} />
 					</Routes>
 				</ScrollToTop>
